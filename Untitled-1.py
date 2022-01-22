@@ -88,6 +88,8 @@ if biome_choice == "Grass land":
         
         if "berries" in eat_berries_or_eat_other_food == "eat berries":
             print("You have choosen to eat the mystery berries")
+            print("You felt fine at first but the next morning your body is aking so you cannot travel as fast anymore")
+            
         else:
             print("You have chosen to try find another food supply")
         
@@ -96,7 +98,8 @@ if biome_choice == "Grass land":
         print("You have chosen to find shelter for the night")
     
 
-#if biome_choice == "Coast line":
-    #print ("You have picked the coast line biome. This biome has ood food and water but you are at risk of storms") 
+if biome_choice == "Coast line":
+    print ("You have picked the coast line biome. This biome has ood food and water but you are at risk of storms") 
+    print ("You look around there are clips and rocks around you and you feel the sof touch of sand beneath your feet")
 
 
