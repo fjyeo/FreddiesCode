@@ -50,7 +50,7 @@ if biome_choice == "desert":
         print("You start walking, not knwoing where to go but after several hours of walking you see a shimmering oasis.... But there are wild Oryx drinking from it already. You have two options you could either go to the oasis and hope they dont attack you or wait until they are done which could be hours. Please pick your option: \n Go to the Oasis or wait")
         oasis_or_wait_desert = input().lower()
         
-        if "oasis" in oasis_or_wait_desert == "oasis":
+        if "oasis" in oasis_or_wait_desert:
             print("You have decided to go to the oasis and risk being attacked to get water")
             print("You could either try sneak up to the Oasis or run over to it because of dehydration. Please pick your option:\n Sneak up or Run")
             sneak_up_or_run = input().lower()
@@ -66,11 +66,26 @@ if biome_choice == "desert":
     else:
         print("You have decided to make a shelter from the dead trees")
         print("You start gathering branches from the trees until you have enough to build a shelter with")
-        print("You dont know what to do because there isnt anything to attach the wood together")    
+        print("You dont know what to do because there isnt anything to attach the wood together")
+        print("You could use your t-shirt to tie it together but then you wouldnt have protection from the sun and sandstorms.Please pick your option:\n Protection from sun or tie your wood together")
+        protection_from_sun_or_tie_wood = input().lower()
+        
+        if "protection" in protection_from_sun_or_tie_wood:
+            print("You have chosen to keep your t-shirt and keep rotected from the sun but that mean u have to abanddon your shelter")
+        else:
+            print("You have chosen to use your t shirt to tie the Wood together for a shelter")
 
-
-#if biome_choice == "Grass land":
-   # print("You have picked the grass land biome. This is an average biome and has food and little fluctation in weather")    
+if biome_choice == "Grass land":
+    print("You have picked the grass land biome. This is an average biome and has food and little fluctation in weather")
+    print("You look around your surrondings and see thick grass, trees and hills surrounding you")
+    print("You start thinking about what to do first. You have come to 2 options you could go look for some food and water or you could try find a good shelter for the night. Please pick your option:\n Find food and water or find shelter for the night")
+    find_water_or_shelter = input().lower()
+   
+    if "water" in find_water_or_shelter or "food" in find_water_or_shelter == "food and water":
+        print("You have chosen to find food and water")
+    else:
+        print("You have chosen to find shelter for the night")
+    
 
 #if biome_choice == "Coast line":
     #print ("You have picked the coast line biome. This biome has ood food and water but you are at risk of storms") 
