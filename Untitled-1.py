@@ -83,6 +83,15 @@ if biome_choice == "Grass land":
    
     if "water" in find_water_or_shelter or "food" in find_water_or_shelter == "food and water":
         print("You have chosen to find food and water")
+        print("You start walking through the grass and see some berries on a tree which would be good nutrition for you. You have two options you could either eat the beries and risk getting ill or try find another food source. Please pick your option:\n Eat them or find other food")
+        eat_berries_or_eat_other_food = input().lower()
+        
+        if "berries" in eat_berries_or_eat_other_food == "eat berries":
+            print("You have choosen to eat the mystery berries")
+        else:
+            print("You have chosen to try find another food supply")
+        
+        
     else:
         print("You have chosen to find shelter for the night")
     
