@@ -68,7 +68,7 @@ if "jungle" in biome_choice:
             check = input("To restart enter Y or if you want to exit any other key")
             if check == "Y": #loops back
               repeat() print("Bye...")
-            else quit() 
+            else: quit() 
             
             
             
