@@ -1,6 +1,9 @@
 introduction ="Hello, welcome to the adventure survival game. During the game you will make several desicions and answer questions which will determine the outcome of your advenuture"
 instruction = "You will now get to decide what youre character will be, please enter youre gender: male or female"
-print(introduction + instruction)
+
+print(introduction)
+input("Press Enter to continue")
+print(instruction)
 gender = input().lower()                                                                                     
 
 if "male" in gender:
@@ -56,7 +59,7 @@ if "jungle" in biome_choice:
         print("You make youre way through the vegitation and then see in the distance a great waterfall....But there are tigers in the way. You could try sneek past the tigers or go around them. Please pick your option: \n Sneek or Go around")
         sneek_or_go_around_jungle = input().lower()
 
-        if "Sneek" in sneek_or_go_around_jungle:
+        if "sneek" in sneek_or_go_around_jungle:
             print("You have decided to try sneek around the tigers")
             print("You get close to the waterful. But the tigers were hungryand needed some food to live")
             print("They quickly jump at you pinning you to the ground and start eating your body eventually killing you. Unfortunatly you have died due to your desicions")
@@ -69,18 +72,18 @@ if "jungle" in biome_choice:
             print("You are also very dirty but there could be dangerous animals in the water. Should you jump in and wash up. Yes or No")
             wash_up_or_not_jungle = input().lower()
             
-            if "Yes" in wash_up_or_not_jungle:
+            if "yes" in wash_up_or_not_jungle:
                 print("There was viscious piranhas in the pool. You tried to escape but there was too many of them. You ended up dying because of your choices.") 
                 quit()
    
 
-if "Desert" in biome_choice:
+if "desert" in biome_choice:
     print("You have picked the Desert biome. This biome is a challenge to survive in and has little food and water ")
     print("You look around your surroundings to see that you are surrounded by endless desert with no water or food in site")
     print("You see that there are a few dead trees around. Do you try make shelter from the dead trees or go on a journey to try find food and water. Please pick your option: \n Shelter or Food and water")
     shelter_or_food_and_water_desert = input().lower()
 
-    if "Food"  in shelter_or_food_and_water_desert or "Water" in shelter_or_food_and_water_desert:
+    if "food" in shelter_or_food_and_water_desert or "Water" in shelter_or_food_and_water_desert:
         print("You have decided to try go on a journey to find food and water")
         print("You start walking, not knwoing where to go but after several hours of walking you see a shimmering oasis.... But there are wild Oryx drinking from it already. You have two options you could either go to the oasis and hope they dont attack you or wait until they are done which could be hours. Please pick your option: \n Go to the Oasis or wait")
         oasis_or_wait_desert = input().lower()
@@ -90,17 +93,17 @@ if "Desert" in biome_choice:
             print("You could either try sneak up to the Oasis or run over to it because of dehydration. Please pick your option:\n Sneak up or Run")
             sneak_up_or_run = input().lower()
 
-            if "Sneak" in sneak_up_or_run:
+            if "sneak" in sneak_up_or_run:
                 print ("You have chosen to sneak up to the Oasis so The wil Oryx don't realise you're there")
-                print("They don't see you and you manage to sneak up and et a drink")
-                print("There are some bananas on a tree but they are very high up. Do you risk going up and hurting yourself or try find another food source. Please pick your option:\n Go up or find other food")
+                print("They don't see you and you manage to sneak up and get a drink")
+                print("There are some bananas on a tree but they are very high up. Do you risk going up and hurting yourself or try find another food source. Please pick your option:\n Climb  up or find other food")
                 climb_up_or_find_another_food_source = input().lower()
                 
-                if "Climb" in climb_up_or_find_another_food_source:
+                if "climb" in climb_up_or_find_another_food_source:
                     print("You have chosen to climb up the tree, you start climbing and then suddenly you loose grip about 10 meters above the ground do you let go. Yes or No?")
                     do_you_let_go_of_banana_tree_or_not = input().lower()
                     
-                    if "Yes" in do_you_let_go_of_banana_tree_or_not:
+                    if "yes" in do_you_let_go_of_banana_tree_or_not:
                         print("You let go of the tree and fell onto the floor. It was a big drop and you sprained your ankle and didn't even get the food")
                     
                     else:
@@ -147,7 +150,7 @@ if "Desert" in biome_choice:
             print("You have chosen to use your t shirt to tie the Wood together for a shelter")
             print("Although you had shelter you havent had food or water ina desert for 24 hours so you pass away in your sleep that night. GAME OVER")
 
-if biome_choice == "Grass land":
+if "grass" in biome_choice:
     print("You have picked the grass land biome. This is an average biome and has food and little fluctation in weather")
     print("You look around your surrondings and see thick grass, trees and hills surrounding you")
     print("You start thinking about what to do first. You have come to 2 options you could go look for some food and water or you could try find a good shelter for the night. Please pick your option:\n Find food and water or find shelter for the night")
@@ -170,7 +173,7 @@ if biome_choice == "Grass land":
         print("You have chosen to find shelter for the night")
     
 
-if "Coast" in biome_choice:
+if "coast" in biome_choice:
     print("You have picked the coast line biome. This biome has ood food and water but you are at risk of storms") 
     print("You look around there are clips and rocks around you and you feel the sof touch of sand beneath your feet")
     print("You suddenly tralise that you have no food, water or shelter")
