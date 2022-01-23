@@ -1,3 +1,5 @@
+def repeat():
+
 introduction ="Hello, welcome to the adventure survival game. During the game you will make several desicions and answer questions which will determine the outcome of your advenuture"
 instruction = "You will now get to decide what youre character will be, please enter youre gender: male or female"
 
@@ -63,7 +65,11 @@ if "jungle" in biome_choice:
             print("You have decided to try sneek around the tigers")
             print("You get close to the waterful. But the tigers were hungryand needed some food to live")
             print("They quickly jump at you pinning you to the ground and start eating your body eventually killing you. Unfortunatly you have died due to your desicions")
-            exit()
+            check = input("To restart enter Y or if you want to exit any other key")
+            if check == "Y": #loops back
+              repeat() print("Bye...")
+            else quit() 
+            
             
             
         else:
